@@ -4,7 +4,7 @@
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-    background-image: url('bk.webp');
+    background-image: url('/bk.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
