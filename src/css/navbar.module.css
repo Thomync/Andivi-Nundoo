@@ -1,0 +1,86 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(25px);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.navbarBrand p{
+    flex: 1;
+    margin-left: 0.5rem;
+    margin-top: 0;
+}
+
+.navbarSearch {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarBrand a p {
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbarLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbarLink img{
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.navbarList {
+    list-style: none;
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbarItem {
+    margin: 0;
+}
+
+.navbarLink:hover {
+    text-decoration: underline;
+}
+
+.navbarItem.active .navbarLink {
+    text-decoration: none;
+    border-bottom: 0.2rem solid #7edd59;
+    padding-bottom: 0.2rem;
+}
+
+.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 430px) {
+    .navbarBrand .navbarLink{
+        font-size: 1.5rem;
+    }
+    .navbarLink {
+        font-size: 1rem;
+    }
+    .navbarBrand p{
+        display: none;
+    }
+}

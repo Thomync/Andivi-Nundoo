@@ -1,0 +1,199 @@
+.usContainer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=6144&h=4096&dpr=2');
+    background-size: cover;
+    background-position: start;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+}
+
+.contributorsTitle{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 0.5rem;
+}
+
+.contributorsTeam{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    width: 280px;
+    height: 280px;
+    background: whitesmoke;
+    border-radius: 32px;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: #4d4343 50px 70px 30px -50px;
+    transition: all 0.5s ease-in-out;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.card .profilePic {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 29px;
+    z-index: 3;
+    border: 0px solid #fbce94;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+}
+
+.card .profilePic img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.card .bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background: #393bae;
+    top: 80%;
+    border-radius: 29px;
+    z-index: 2;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.card .bottom .content {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 160px;
+}
+
+.card .bottom .content .name {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.card .bottom .content .aboutMe {
+    display: block;
+    font-size: 0.9rem;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+
+.card .bottom .bottomBottom {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    border-top-left-radius: 55px;
+}
+
+.card:hover .bottom {
+    top: 20%;
+    border-radius: 80px 29px 29px 29px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.card:hover .profilePic {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid #393bae;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+}
+
+.card:hover .profilePic:hover {
+    transform: scale(1.3);
+    border-radius: 0px;
+}
+
+.card:hover .profilePic img {
+    transition: all 0.5s ease-in-out 0.5s;
+    height: 100%;
+}
+
+.socialLinksContainer{
+    background-color: white;
+    border-radius: 2rem;
+    width: 8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.socialLinksContainer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 16px;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .contributorsTeam {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .bottom {
+        top: 20%;
+        border-radius: 80px 29px 29px 29px;
+    }
+
+    .card .profilePic {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        border: 7px solid #393bae;
+    }
+
+    .card .profilePic img{
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contributorsTeam {
+        grid-template-columns: 1fr;
+    }
+}

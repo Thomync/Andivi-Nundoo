@@ -1,0 +1,53 @@
+.landingContainer{
+    display: flex;
+    flex-direction: column;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    background-image: url('bk.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 95vh;
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+}
+
+.landingContainer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 4px 4px 4px #000000;
+    margin-top: 2rem;
+}
+
+.landingContainer h2{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landingContainer div{
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto;
+    height: 20rem;
+    max-height: 25rem;
+}

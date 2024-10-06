@@ -1,0 +1,88 @@
+.planetDetailsSection {
+    display: flex;
+    flex-direction: column;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=6000&h=4000&dpr=2');
+    background-size: cover;
+    background-position: start;
+    background-attachment: fixed;
+    height: 95vh;
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+
+.planetDetailsContainer{
+    overflow-x: hidden;
+}
+
+.backButton{
+    position:absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    left: 1rem;
+    top: 0.5rem;
+    width: fit-content;
+    height: 2rem;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.75rem;
+}
+
+.backButton:hover {
+    border: 2px solid rgb(250, 40, 40);
+}
+
+.planetDetailsContainer {
+    overflow-x: hidden;
+    margin: 0 10px;
+}
+
+.planetDetailsContainer table{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.modelContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(100, 100, 100, 0.25);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 25px;
+    border-color: gainsboro;
+    border: 1px solid white;
+    width: 18rem;
+    height: 20rem;
+    text-align: center;
+}
