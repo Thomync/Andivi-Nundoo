@@ -11,7 +11,7 @@
 
 # *Orgullosamente UTM*
 
-![¡Oaxaca al espacio!](\public\fotoEquipo.jpg)
+![¡Oaxaca al espacio!](/public/fotoEquipo.jpg)
 
 # React + Vite
 
