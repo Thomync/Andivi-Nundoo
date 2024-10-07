@@ -7,7 +7,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://127.0.0.1:5000', // El servidor Flask
+                target: 'https://f3f6-189-203-247-6.ngrok-free.app/', // El servidor Flask
                 changeOrigin: true,
                 secure: false,
             },
