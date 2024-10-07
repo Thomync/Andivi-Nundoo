@@ -12,7 +12,7 @@ plt.switch_backend('Agg')
 
 app = Flask(__name__)
 # Permitir solicitudes CORS solo desde un origen específico
-CORS(app, origins=["https://ncwj6j5n-5173.use.devtunnels.ms", "http://localhost:5173", "http://127.0.0.1:5000", "https://f3f6-189-203-247-6.ngrok-free.app"])
+CORS(app, origins=["https://ncwj6j5n-5173.use.devtunnels.ms", "http://localhost:5173", "http://127.0.0.1:5000", "https://f3f6-189-203-247-6.ngrok-free.app", "https://andivi-nundoo.vercel.app"])
 
 # Leer los datos
 planetas = pd.read_csv("planetas.csv")
